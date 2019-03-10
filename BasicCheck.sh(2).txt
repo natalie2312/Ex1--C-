@@ -8,6 +8,7 @@ make
 isMake=$?
 if [ "$isMake" -gt "0" ] ; then
         echo "Compilation FAIL"
+        cd $currentLocation
         exit 7
 fi
 
@@ -30,6 +31,7 @@ fi
 
 
 status=$error$isRace
+cd $currentLocation
 if [ "$status" -eq "00" ] ; then
         echo "Compilation PASS  Memory leaks PASS       Tread race PASS"
         exit 0
