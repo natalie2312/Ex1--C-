@@ -1,7 +1,0 @@
-#!make -f
-CXX=clang++-6.0
-#CXX=clang++-5.0
-CXXFLAGS=-std=c++17
-
-all:
-        $(CXX) $(CXXFLAGS) *.cpp
