@@ -1,3 +1,5 @@
+#Nataly Almog and Danielle Zand
+
 #!/bin/bash
 folderName=$1
 executable=$2
